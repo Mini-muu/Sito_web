@@ -90,8 +90,19 @@ main {
     display: none;
   }
   .navbar {
-    top: 0;
-    border-radius: 0;
+    padding: 0;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar .logo-wrapper {
+    padding: 1rem 2rem;
+  }
+  .navbar .logo-wrapper img {
+    height: 2.5rem;
   }
 }
 
@@ -104,13 +115,19 @@ main {
 .navbar .nav-dropdown .nav-button {
   border: none;
   background-color: inherit;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
   background-image: url(assets/icons/menu.svg);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }
 
 .navbar .nav-dropdown .nav-button-active {
   background-image: url(assets/icons/close.svg);
+  background-color: var(--ac-primary);
 }
 
 .navbar .nav-dropdown .dropdown-menu {
