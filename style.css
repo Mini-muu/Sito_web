@@ -104,16 +104,13 @@ main {
 .navbar .nav-dropdown .nav-button {
   border: none;
   background-color: inherit;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url(assets/icons/menu.svg);
 }
 
-.navbar .nav-dropdown .nav-button svg {
-  height: 2rem;
-  vertical-align: bottom;
-  color: var(--ac-primary);
-}
-
-.navbar .nav-dropdown .nav-button-active svg {
-  color: white;
+.navbar .nav-dropdown .nav-button-active {
+  background-image: url(assets/icons/close.svg);
 }
 
 .navbar .nav-dropdown .dropdown-menu {
