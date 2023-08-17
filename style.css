@@ -91,9 +91,9 @@ main {
   }
   .navbar {
     padding: 0;
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
     gap: 1rem;
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.9);
@@ -165,6 +165,10 @@ main {
   main {
     margin-top: 105px;
   }
+}
+
+.content-active {
+  filter: brightness(0.2);
 }
 
 /* /Main */

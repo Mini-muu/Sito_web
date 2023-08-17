@@ -6,4 +6,5 @@ function nav_dropdown_toggle() {
     setTimeout(() => {
     dropdown.style.opacity = 1;
     }, this.animationDelay + 200);
+    document.getElementById("content").classList.toggle("content-active");
   }
