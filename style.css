@@ -2,7 +2,10 @@
 
 :root {
   --ac-primary: #CD5322;
+  --ac-secondary: #F79236;
   --bg-primary: #111111;
+  --bg-secondary: #EBEBEB;
+  --ac-neutral: #373737;
   --transition-speed: 200ms ease-in-out;
 }
 
@@ -13,7 +16,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--bg-secondary);
 }
 
 * {
@@ -44,7 +47,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--ac-neutral);
   border-radius: 25px;
   letter-spacing: 2px;
 }
@@ -65,7 +68,7 @@ main {
 
 .navbar .nav-link a {
   text-decoration: none;
-  color: white;
+  color: var(--bg-secondary);
 }
 
 .navbar .nav-link a:last-child {
@@ -81,7 +84,6 @@ main {
 
 .navbar .nav-link a:last-child:hover {
   background-color: var(--bg-primary);
-  color: white;
 }
 
 @media (max-width: 1000px) {
@@ -137,7 +139,7 @@ main {
   top: 6rem;
   overflow: auto;
   z-index: 100;
-  background-color: white;
+  background-color: var(--bg-secondary);
   padding: 2rem;
   margin: auto 2rem;
   border-radius: 1rem;
@@ -185,7 +187,6 @@ main {
   font-size: 6rem;
   padding-bottom: 2rem;
   line-height: 0.9;
-  color: white;
   mix-blend-mode: color;
 }
 
@@ -203,7 +204,7 @@ main {
 
 .hero-section a:hover {
   background-color: var(--bg-primary);
-  color: white;
+  color: var(--bg-secondary);
 }
 
 @media (max-width: 1000px) {
@@ -259,10 +260,9 @@ main {
 }
 
 .articles-section .card {
-  background: black;
+  background: var(--ac-neutral);
   text-decoration: none;
-  color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: var(--bg-secondary);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -274,7 +274,6 @@ main {
 
 .articles-section .card:hover {
   top: -10px;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 .articles-section .card article {
@@ -288,7 +287,7 @@ main {
 .articles-section .card h1 {
   font-size: 20px;
   margin: 0 0 10px 0;
-  color: var(--ac-primary);
+  color: var(--ac-secondary);
 }
 
 .articles-section .card p {
@@ -383,8 +382,8 @@ footer .footer-container .text-container .text-column {
 
 footer .copyright {
   text-align: center;
-  color: var(--ac-primary);
-  border-top: solid 3px var(--ac-primary);
+  color: var(--ac-secondary);
+  border-top: solid var(--ac-secondary);
   max-width: 1200px;
   margin: auto;
   margin-bottom: 1rem;
