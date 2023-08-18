@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
 
 :root {
@@ -141,7 +140,7 @@ main {
   background-color: white;
   padding: 2rem;
   margin: auto 2rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .navbar .nav-dropdown .dropdown-menu a {
@@ -327,7 +326,7 @@ main {
 
 /* Footer */
 
-.footer-container {
+footer .footer-container {
   margin: 5rem auto;
   max-width: 1200px;
   display: flex;
@@ -335,32 +334,32 @@ main {
   flex-direction: row;
 }
 
-.footer-container .logo-container img {
+footer .footer-container .logo-container img {
   height: 4rem;
 }
 
-.footer-container .text-container {
+footer .footer-container .text-container {
   display: flex;
   flex-direction: row;
 }
 
-.footer-container .text-container h3 {
+footer .footer-container .text-container h3 {
   color: var(--ac-primary);
   font-size: 1.3rem;
 }
 
-.footer-container .text-container a {
+footer .footer-container .text-container a {
   text-decoration: none;
   color: white;
   margin-top: 1rem;
   font-size: 1.2rem;
 }
 
-.footer-container .text-container a:hover {
+footer .footer-container .text-container a:hover {
   opacity: 0.5;
 }
 
-.footer-container .text-container .text-column {
+footer .footer-container .text-container .text-column {
   display: flex;
   flex-direction: column;
   margin: auto 2rem;
@@ -369,29 +368,38 @@ main {
 }
 
 @media (max-width: 1000px) {
-  .footer-container {
+  footer .footer-container {
     flex-direction: column;
     align-items: center;
   }
-  .footer-container .text-container {
+  footer .footer-container .text-container {
     flex-direction: column;
   }
-  .footer-container .text-container .text-column {
+  footer .footer-container .text-container .text-column {
     margin-top: 5rem;
-    text-align: right;
+    text-align: center;
   }
 }
 
-.copyright {
+footer .copyright {
   text-align: center;
   color: var(--ac-primary);
-  border-top: solid 2px var(--ac-primary);
+  border-top: solid 3px var(--ac-primary);
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
-.copyright p {
+footer .copyright p {
   font-size: 1rem;
   padding: 1rem;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  footer .copyright {
+    margin: 1rem;
+  }
 }
 
 /* /Footer */
@@ -399,6 +407,31 @@ main {
 /* About Us Page */
 
 /* /About Us Page */
+
+/* Projects Page */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .projects-container {
+    margin: auto 0.5rem;
+  }
+}
+
+.projects-item {
+  min-height: 600px;
+  background-color: grey;
+  border-radius: 1rem;
+  mix-blend-mode: color;
+}
+
+/* /Projects Page */
 
 /* Noise Generator */
 
