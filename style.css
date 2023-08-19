@@ -329,6 +329,7 @@ main {
 footer {
   background-color: black;
   mix-blend-mode: color;
+  width: 100%;
 }
 
 footer .footer-container {
@@ -423,11 +424,11 @@ footer .footer-container .text-container .text-column {
 
 .contactform {
   display: flex;
-  min-height: 80vh;
+  margin: 10rem auto;
 }
 
 .contactform .container {
-  flex: 0 1 700px;
+  flex: 0 1 1200px;
   margin: auto;
   padding: 10px;
 }
@@ -435,7 +436,7 @@ footer .footer-container .text-container .text-column {
 .contactform .screen {
   position: relative;
   background: var(--ac-neutral);
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 .contactform .screen:after {
@@ -446,7 +447,7 @@ footer .footer-container .text-container .text-column {
   left: 20px;
   right: 20px;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
@@ -456,8 +457,8 @@ footer .footer-container .text-container .text-column {
   align-items: center;
   padding: 10px 20px;
   background: var(--ac-primary);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .contactform .screen-header-left {
@@ -525,7 +526,9 @@ footer .footer-container .text-container .text-column {
 
 .contactform .app-form-group.buttons {
   margin-bottom: 0;
-  text-align: right;
+  justify-content: right;
+  display: flex;
+  gap: 1rem;
 }
 
 .contactform .app-form-control {
