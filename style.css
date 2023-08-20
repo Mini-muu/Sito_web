@@ -331,6 +331,7 @@ footer .footer-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  border-top: solid 5px var(--ac-primary);
 }
 
 footer .footer-container .logo-container img {
@@ -395,6 +396,7 @@ footer .footer-container .text-container .text-column {
   width: 90%;
   border-radius: var(--border-radius);
   mix-blend-mode: difference;
+  margin-bottom: 80px;
 }
 
 .team-container  .card {
