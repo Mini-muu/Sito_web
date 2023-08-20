@@ -159,7 +159,7 @@ main {
 
 @media (max-width: 1000px) {
   main {
-    margin-top: 105px;
+    margin-top: 100px;
   }
 }
 
@@ -217,7 +217,6 @@ main {
 
 .articles-section {
   margin: 80px auto;
-  margin-bottom: 80px;
 }
 
 .articles-section header {
@@ -320,18 +319,16 @@ main {
 /* Footer */
 
 footer {
-  width: 100%;
+  width: 90%;
+  margin: 80px auto;
 }
 
 footer .footer-container {
   margin: auto;
-  padding-bottom: 80px;
-  padding-top: 80px;
-  max-width: 1200px;
+  padding: 80px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  border-top: solid 5px var(--ac-primary);
 }
 
 footer .footer-container .logo-container img {
@@ -387,7 +384,7 @@ footer .footer-container .text-container .text-column {
 
 .team-container {
   background-color: #f2f2f2;
-  margin: 0 auto;
+  margin: 180px auto 80px auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -396,7 +393,6 @@ footer .footer-container .text-container .text-column {
   width: 90%;
   border-radius: var(--border-radius);
   mix-blend-mode: difference;
-  margin-bottom: 80px;
 }
 
 .team-container  .card {
@@ -427,6 +423,12 @@ footer .footer-container .text-container .text-column {
   margin: 5px 0;
   font-size: 0.9rem;
   color: #666;
+}
+
+@media (max-width: 1000px) {
+  .team-container {
+    margin-top: 0;
+  }
 }
 
 /* /About Us Page */
