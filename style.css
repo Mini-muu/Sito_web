@@ -6,6 +6,7 @@
   --bg-primary: #111111;
   --bg-secondary: #EBEBEB;
   --ac-neutral: #373737;
+  --border-radius: 10px;
   --transition-speed: 200ms ease-in-out;
 }
 
@@ -48,7 +49,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  border-radius: 25px;
+  border-radius: var(--border-radius);
   letter-spacing: 2px;
 }
 
@@ -75,7 +76,7 @@ main {
   color: var(--bg-primary);
   background-color: var(--ac-primary);
   padding: 1rem 1.5rem;
-  border-radius: 2rem;
+  border-radius: var(--border-radius);
 }
 
 .navbar .nav-link a:hover {
@@ -96,7 +97,7 @@ main {
     left: 0.5rem;
     right: 0.5rem;
     gap: 1rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
   }
   .navbar .logo-wrapper {
     padding: 1rem 2rem;
@@ -141,7 +142,7 @@ main {
   background-color: var(--bg-secondary);
   padding: 2rem;
   margin: auto 2rem;
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
 }
 
 .navbar .nav-dropdown .dropdown-menu a {
@@ -194,7 +195,7 @@ main {
   color: var(--bg-primary);
   background-color: var(--ac-primary);
   padding: 1rem 1.5rem;
-  border-radius: 2rem;
+  border-radius: var(--border-radius);
   letter-spacing: 2px;
   font-size: 1.1rem;
   font-weight: 800;
@@ -267,7 +268,7 @@ main {
   min-height: 100%;
   position: relative;
   top: 0;
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
   mix-blend-mode: color;
 }
 
@@ -307,8 +308,8 @@ main {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 @media (min-width: 60em) {
@@ -397,40 +398,40 @@ footer .footer-container .text-container .text-column {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
   width: 90%;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
+  mix-blend-mode: difference;
 }
 
 .team-container  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-  }
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
   
 .team-container  .card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
   
 .team-container .card h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #333;
-  }
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
   
 .team-container .card p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-    color: #666;
-  }
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
 
 /* /About Us Page */
 
