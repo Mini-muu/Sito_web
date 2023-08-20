@@ -320,7 +320,7 @@ main {
 
 footer {
   width: 90%;
-  margin: 80px auto;
+  margin: auto;
 }
 
 footer .footer-container {
@@ -368,6 +368,7 @@ footer .footer-container .text-container .text-column {
   footer .footer-container {
     flex-direction: column;
     align-items: center;
+    padding: 80px 0;
   }
   footer .footer-container .text-container {
     flex-direction: column;
@@ -384,7 +385,7 @@ footer .footer-container .text-container .text-column {
 
 .team-container {
   background-color: #f2f2f2;
-  margin: 180px auto 80px auto;
+  margin: auto auto auto auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
