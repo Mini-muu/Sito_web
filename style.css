@@ -36,7 +36,7 @@ main {
 .navbar {
   z-index: 99;
   position: fixed;
-  max-width: 1200px;
+  width: 90%;
   height: 5rem;
   margin: auto;
   padding: 0 2rem;
@@ -226,7 +226,6 @@ main {
 
 .articles-section header {
   width: 90%;
-  max-width: 1200px;
   margin: 1rem auto;
   padding-left: 1rem;
   font-size: 1rem;
@@ -240,7 +239,6 @@ main {
 
 .articles-section .band {
   width: 90%;
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -391,30 +389,52 @@ footer .footer-container .text-container .text-column {
 
 /* About Us Page */
 
+.team-container {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.team-container  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+.team-container  .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+.team-container .card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+.team-container .card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
 /* /About Us Page */
 
 /* Projects Page */
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-@media (max-width: 1200px) {
-  .projects-container {
-    margin: auto 0.5rem;
-  }
-}
-
-.projects-item {
-  min-height: 600px;
-  background-color: grey;
-  border-radius: 1.5rem;
-  mix-blend-mode: color;
-}
 
 /* /Projects Page */
 
