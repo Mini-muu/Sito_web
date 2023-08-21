@@ -10,4 +10,4 @@ Projects Page (No)
 
 Contact Page (No)
 
-Home Page (Half Done)
+Home Page (Done)
