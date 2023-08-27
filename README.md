@@ -4,9 +4,9 @@ to do list:
 
 Code Optimized (Done)
 
-Our Team Page (Half Done)
+Our Team Page (Done)
 
-Projects Page (No)
+Projects Page (Done)
 
 Contact Page (No)
 
