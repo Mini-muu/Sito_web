@@ -324,8 +324,10 @@ footer {
 }
 
 footer .footer-container {
+  border-top: solid var(--ac-primary);
   margin: auto;
-  padding: 80px;
+  margin: 80px auto;
+  padding: 25px 80px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -386,7 +388,8 @@ footer .footer-container .text-container .text-column {
 
 .team-container {
   background-color: #f2f2f2;
-  margin: auto auto auto auto;
+  background-color: black;
+  margin: 15px auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -399,6 +402,7 @@ footer .footer-container .text-container .text-column {
 
 .team-container  .card {
   background-color: #fff;
+  background-color: #f2f2f2;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 15px;
