@@ -437,6 +437,61 @@ footer .footer-container .text-container .text-column {
 
 /* Projects Page */
 
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 400px;
+  gap: 15px;
+  margin: 15px auto;
+  width: 90%;
+}
+
+@media (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects-container .project-card {
+  background-color: #fff;
+  mix-blend-mode: difference;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.projects-container .project-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.projects-container .project-card p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.projects-container .explore-button {
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition-speed);
+}
+
+.projects-container .explore-button:hover {
+  background-color: #e65100;
+}
+
 /* /Projects Page */
 
 /* Contact Us Page */
