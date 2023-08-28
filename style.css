@@ -324,7 +324,7 @@ footer {
 }
 
 footer .footer-container {
-  border-top: solid var(--ac-primary);
+  border-top: solid 1px var(--ac-primary);
   margin: auto;
   margin: 80px auto;
   padding: 80px 80px;
