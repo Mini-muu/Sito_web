@@ -2,12 +2,8 @@
 
 to do list:
 
-Code Optimized (Done)
+Contact Page
 
-Our Team Page (Done)
+Insert images
 
-Projects Page (Done)
-
-Contact Page (No)
-
-Home Page (Done)
+Insert Content for Articles
