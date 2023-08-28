@@ -327,7 +327,7 @@ footer .footer-container {
   border-top: solid var(--ac-primary);
   margin: auto;
   margin: 80px auto;
-  padding: 25px 80px;
+  padding: 80px 80px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
