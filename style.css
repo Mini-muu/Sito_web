@@ -280,7 +280,7 @@ main {
 .articles-section .card h1 {
   font-size: 20px;
   margin: 0 0 10px 0;
-  color: var(--ac-secondary);
+  color: var(--ac-primary);
 }
 
 .articles-section .card p {
