@@ -513,7 +513,7 @@ footer .footer-container .text-container .text-column {
   bottom: -50%;
   width: 200%;
   height: 200vh;
-  background: transparent url('https://lorenzofiori.art/assets/img/logo/noise.png') repeat 0 0;
+  background: transparent url('assets/img/noise.png') repeat 0 0;
   background-repeat: repeat;
   animation: noise-animation .2s infinite;
   visibility: visible;
