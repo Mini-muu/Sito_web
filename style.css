@@ -92,6 +92,7 @@ body {
     left: 8px;
     right: 8px;
     gap: 16px;
+    width: auto;
     border-radius: var(--border-radius);
   }
   .navbar .logo-wrapper {
