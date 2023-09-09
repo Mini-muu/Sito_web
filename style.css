@@ -324,65 +324,61 @@ main {
 /* Footer */
 
 footer {
-  margin: auto;
+  margin: 80px auto;
   max-width: 1200px;
+  padding: 80px 25px;
+  text-align: right;
 }
 
 footer .footer-container {
-  margin: auto;
-  margin: 80px auto;
-  padding: 80px 80px;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  footer .footer-container {
+    flex-direction: column;
+  }
+}
+
+footer .footer-container .logo-container {
+  display: flex;
+  place-content: center;
+  margin-bottom: 20px;
 }
 
 footer .footer-container .logo-container img {
   height: 64px;
 }
 
-footer .footer-container .text-container {
+footer .footer-container .social-container {
   display: flex;
-  flex-direction: row;
+  place-content: center;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-footer .footer-container .text-container h3 {
-  color: var(--ac-primary);
-  font-size: 24px;
+footer .footer-container .social-container img {
+  height: 45px;
 }
 
-footer .footer-container .text-container a {
-  text-decoration: none;
-  color: white;
-  margin-top: 16px;
-  font-size: 16px;
-  letter-spacing: 1px;
+footer .footer-container .social-container img:hover {
+  transform: translateY(-10px);
 }
 
-footer .footer-container .text-container a:hover {
-  opacity: 0.5;
-}
-
-footer .footer-container .text-container .text-column {
-  display: flex;
-  flex-direction: column;
-  margin: auto 32px;
-  height: 100%;
-  text-align: center;
+footer .copyright-container {
+  margin-top: 20px;
 }
 
 @media (max-width: 1000px) {
-  footer .footer-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 0;
-  }
-  footer .footer-container .text-container {
-    flex-direction: column;
-  }
-  footer .footer-container .text-container .text-column {
-    margin-top: 80px;
+  footer {
     text-align: center;
+  }
+  footer .footer-container .logo-container img {
+    height: 50px;
+  }
+  footer .footer-container .social-container img {
+    height: 35px;
   }
 }
 
@@ -392,7 +388,6 @@ footer .footer-container .text-container .text-column {
 
 .team-container {
   background-color: #f2f2f2;
-  background-color: black;
   margin: 15px auto;
   padding: 0;
   display: flex;
@@ -406,7 +401,6 @@ footer .footer-container .text-container .text-column {
 
 .team-container  .card {
   background-color: #fff;
-  background-color: #f2f2f2;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 15px;
