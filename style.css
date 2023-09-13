@@ -19,7 +19,7 @@
 
 body {
   background-color: #111111;
-  background-image: url(assets/img/background-muuu.svg);
+  background-image: url(/assets/img/background-muuu.svg);
   background-attachment: fixed;
   background-size: 1080px;
   background-position: center;
@@ -39,14 +39,13 @@ body {
 .navbar {
   z-index: 99;
   position: fixed;
-  width: 90%;
   height: 80px;
   margin: auto;
   padding: 0 32px;
   top: 25px;
   bottom: auto;
-  left: 0%;
-  right: 0%;
+  left: 25px;
+  right: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +120,7 @@ body {
   background-color: inherit;
   height: 48px;
   width: 48px;
-  background-image: url(assets/icons/menu.svg);
+  background-image: url(/assets/icons/menu.svg);
   background-size: 32px;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +129,7 @@ body {
 }
 
 .navbar .nav-dropdown .nav-button-active {
-  background-image: url(assets/icons/close.svg);
+  background-image: url(/assets/icons/close.svg);
   background-color: var(--ac-primary);
 }
 
@@ -268,6 +267,8 @@ main {
   position: relative;
   top: 0;
   border-radius: var(--border-radius);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .articles-section .card:hover {
@@ -325,7 +326,7 @@ main {
 
 footer {
   margin: 80px auto;
-  max-width: 1200px;
+  max-width: 60%;
   padding: 80px 25px;
   text-align: right;
 }
@@ -336,6 +337,9 @@ footer .footer-container {
 }
 
 @media (max-width: 1000px) {
+  footer {
+    max-width: 100%;
+  }
   footer .footer-container {
     flex-direction: column;
   }
@@ -498,3 +502,15 @@ footer .copyright-container {
 /* Contact Us Page */
 
 /* /Contact Us Page */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ac-primary);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-primary);
+}
