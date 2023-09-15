@@ -10,7 +10,7 @@
   --transition-speed: 200ms ease-in-out;
 }
 
-* {
+ *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -496,5 +496,59 @@ footer .copyright-container {
 /* /Projects Page */
 
 /* Contact Us Page */
+.contact-title {
+text-align: center;
+font-size: 96px; ;
+
+}
+.body-contact input{
+  margin-top: 30px; margin-bottom: 30px;margin-left: 10px;
+  
+}
+.send-button{
+  
+  margin: auto;
+  padding: 10px 20px;
+  background-color:#e65100;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: var(--transition-speed);
+}
+
+
 
 /* /Contact Us Page */
+.contact-form{
+ margin: auto;
+  display: table; 
+  
+
+  
+}
+
+.contact-form p{
+  display: table-row; 
+}
+
+.contact-form input{
+  display: table-cell;
+}
+.contact-form label{
+  display: table-cell;
+  font-size: 30px;
+  text-align: left;
+  display: inline-block;
+  width: 200px; /* larghezza dell'etichetta */  
+}
+.contact-form textarea{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+
+}
+/* / */

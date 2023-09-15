@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>contattaci</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            
+        </head>
+        <body>
+            <header>
+                <nav class="navbar">
+                  <div class="logo-wrapper">
+                    <a href="./"><img src="assets/img/nav-logo.svg" alt="mini muuu logo"></a>
+                  </div>
+                  <div class="nav-link">
+                    <a href="./">Home</a>
+                    <a href="./about.html">Who We Are</a>
+                    <a href="./projects.html">Our Projects</a>
+                    <a href="contact.html">Contact Us</a>
+                  </div>
+                  <div class="nav-dropdown">
+                    <button onclick="nav_dropdown_toggle()" class="nav-button" id="nav-button">
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu nav-link">
+                      <a href="./">Home</a>
+                      <a href="./about.html">Who We Are</a>
+                      <a href="./projects.html">Our Projects</a>
+                      <a href="contact.html">Contact Us</a>
+                    </div>
+                  </div>
+                </nav>
+              </header>
+            <div class="hero-section">
+                <h1>contact <span style="color: var(--ac-primary);">us</span></h1>
+            
+            <div class="contact-form">
+                <form method="post" action="/INVIA" class="body-contact" >
+                    <p>
+                <label for="email">nome</label>
+                <input  name="nome" placeholder="nome"/>
+                    </p>
+                <br/>
+                <p>
+                <label for="cognome">cognome</label>
+                <input type="text" name="cognome" placeholder="cognome"/>
+                </p>
+                <br/>
+                <p>
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="e-mail"/>
+                </p>
+                <br/>
+                <p>
+                <label for="email">messaggio</label>
+                <textarea  name="nome" placeholder="messaggio" id="myTextarea" oninput="autoResize()"></textarea>
+                </p>
+                <br />
+                <button class="send-button" type="submit" title="invia" >invia</button>
+                <script src="../../assets/js/navigation.js"></script>
+            </form>
+            </div>
+                
+        </body>
+    </html>
+    
