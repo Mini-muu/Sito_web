@@ -26,7 +26,7 @@
         <a href="/./">Home</a>
         <a href="/about.html">Who We Are</a>
         <a href="/projects.html">Our Projects</a>
-        <a href="mailto:teamminimuuu@gmail.com">Contact Us</a>
+        <a href="/contact.html">Contact Us</a>
       </div>
       <div class="nav-dropdown">
         <button onclick="nav_dropdown_toggle()" class="nav-button" id="nav-button">
@@ -35,56 +35,44 @@
           <a href="/./">Home</a>
           <a href="/about.html">Who We Are</a>
           <a href="/projects.html">Our Projects</a>
-          <a href="mailto:teamminimuuu@gmail.com">Contact Us</a>
+          <a href="/contact.html">Contact Us</a>
         </div>
       </div>
     </nav>
   </header>
   <!-- /NavBar -->
   <main id="content">
-    <div class="projects-container">
-
-      <div class="project-card" style="background: center url(assets/img/projects/prochronos.jpg); background-size: cover;">
-        <h3 style="color: white;">Prochronos</h3>
-        <p style="color: #f2f2f2;">Machine Learning Based Platform Game</p>
-        <a href="#" class="explore-button">Esplora</a>
-      </div>
-      
-      <div class="project-card">
-        <h3>Coming Soon</h3>
-        <p>Undefined</p>
-        <a href="#" class="explore-button">Esplora</a>
-      </div>
+    
       <div class="hero-section">
         <h1>contact <span style="color: var(--ac-primary);">us</span></h1>
     
-    <div class="contact-form">
-        <form method="post" action="/INVIA" class="body-contact" >
+        <div class="contact-form">
+            <form method="post" action="/INVIA" class="body-contact" >
+                <p>
+            <label for="email">nome</label>
+            <input  name="nome" placeholder="nome"/>
+                </p>
+            <br/>
             <p>
-        <label for="email">nome</label>
-        <input  name="nome" placeholder="nome"/>
+            <label for="cognome">cognome</label>
+            <input type="text" name="cognome" placeholder="cognome"/>
             </p>
-        <br/>
-        <p>
-        <label for="cognome">cognome</label>
-        <input type="text" name="cognome" placeholder="cognome"/>
-        </p>
-        <br/>
-        <p>
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="e-mail"/>
-        </p>
-        <br/>
-        <p>
-        <label for="email">messaggio</label>
-        <textarea  name="nome" placeholder="messaggio" id="myTextarea" oninput="autoResize()"></textarea>
-        </p>
-        <br />
-        <button class="send-button" type="submit" title="invia" >invia</button>
-        <script src="../../assets/js/navigation.js"></script>
-    </form>
-    </div>
-    </div>
+            <br/>
+            <p>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="e-mail"/>
+            </p>
+            <br/>
+            <p>
+            <label for="email">messaggio</label>
+            <textarea  name="nome" placeholder="messaggio" id="myTextarea" oninput="autoResize()"></textarea>
+            </p>
+            <br />
+            <button class="send-button" type="submit" title="invia" >invia</button>
+            <script src="../../assets/js/navigation.js"></script>
+        </form>
+        </div>
+      </div>
     <!-- Footer -->
     <footer>
       <div class="footer-container">
