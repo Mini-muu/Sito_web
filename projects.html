@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/styles/main.css">
   <!-- SEO -->
-  <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon">
-  <title>Mini Muuu | Our Projects</title>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon">
+    <!-- /FavIcon -->
+  <title>Team Mini Muuu | Our Projects</title>
   <meta name="author" content="lorenzo fiori">
-  <meta name="description" content="Mini Muuu was born on May 18th (2023), in the warmth of a tea cup at the McDonald's in Biassono. Gathered around that steaming cup, a group of young talents gave life to a video game development company, fueled by passion and creativity. Since then, Mini Muuu has been dedicated to creating unique experiences in the world of games, carrying forward their story of success.">
-  <meta name="keywords" content="Videogame, Machine Learning, Mini Muuu, Muuu, Redbull Indie Forge, Prochronos, Games">
-  <meta name="robots" content="noAI">
+  <meta name="description" content="Explore the imaginative world of indie game development with Mini Muuu. Our team crafts captivating and innovative games that will transport you to new realms of adventure. Discover your next gaming obsession today!">
+  <meta name="keywords" content="Videogame, Machine Learning, Mini Muuu, Muuu, Redbull Indie Forge, Prochronos, Games, Art">
   <!-- /SEO -->
+  <!-- Open Graph Protocol -->
+  <meta property="og:title" content="Mini Muuu | Indie Videogame Developing Team" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://minimuuu.it/" />
+  <meta property="og:image" content="https://minimuuu.it/assets/img/projects/prochronos.gif" />
+  <!-- /Open Graph Protcol -->
 </head>
 <body>
   <!-- NavBar -->
@@ -27,8 +34,7 @@
         <a href="/contact.html">Contact Us</a>
       </div>
       <div class="nav-dropdown">
-        <button onclick="nav_dropdown_toggle()" class="nav-button" id="nav-button">
-        </button>
+        <button onclick="nav_dropdown_toggle()" class="nav-button" id="nav-button"></button>
         <div id="dropdown-menu" class="dropdown-menu nav-link">
           <a href="/./">Home</a>
           <a href="/about.html">Who We Are</a>
@@ -42,10 +48,11 @@
   <main id="content">
     <div class="projects-container">
 
-      <div class="project-card" style="background: center url(assets/img/projects/prochronos.jpg); background-size: cover;">
-        <h3 style="color: white;">Prochronos</h3>
-        <p style="color: #f2f2f2;">Machine Learning Based Platform Game</p>
-        <a href="#" class="explore-button">Esplora</a>
+      <div class="project-card" style="background: center url(assets/img/projects/prochronos.gif); background-size: cover;">
+        <div class="filter"></div>
+        <h3 style="color: black;">Prochronos</h3>
+        <p style="color: #111;">Machine Learning Based Platform Game</p>
+        <a href="/projects/prochronos/./" class="explore-button">Esplora</a>
       </div>
       
       <div class="project-card">
@@ -70,13 +77,13 @@
       </div>
       <hr style="color: var(--ac-primary); height: 1px; border: solid 1px; border-radius: 1px;">
       <div class="copyright-container">
-        <p>© Copyright <a href="https://lorenzofiori.art" target="_blank" style="text-decoration: none; color: inherit;">Lorenzo Fiori</a>® All rights reserved.</p>
+        <p>© Copyright <a href="https://lorenzofiori.art" style="text-decoration: none; color: inherit;">Lorenzo Fiori</a>® All rights reserved.</p>
       </div>
     </footer>
     <!-- /Footer -->
   </main>
   <!-- Scripts -->
-  <script src="/assets/js/navigation.js"></script>
+  <script src="/assets/scripts/navigation.js"></script>
   <noscript>Your Browser Do Not Support Javascript</noscript>
   <!-- /Scripts -->
 </body>
